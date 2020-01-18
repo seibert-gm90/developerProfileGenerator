@@ -18,7 +18,7 @@ inquirer
         }
     ])
     .then(function ({ username, favoriteColor }) {
-        const queryUrl = `https://api.github.com/users/${username}/repos?per_page=100`;
+        const queryUrl = `https://api.github.com/users/${username}/repos?per_page=100/`;
 
 
 
