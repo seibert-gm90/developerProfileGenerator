@@ -13,47 +13,62 @@
 </head>
 
 <body>
-    <div class="container">
-        <div class="row">
-            <div class="col">
-                <div class="card dark">
-                    <div class="card-header">Header(Photo)</div>
-                    <div class="card-body">Where name will go</div>
-                    <div class="card-footer">Footer(gitHub, location, and blog gif will go)</div>
+    <header>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card dark">
+                        <img src="${profile.profileImage}" height="175" />
+                        <h1>${profile.name}</h1>
+                        <p class="header-links d-flex justify-content-center flex-wrap">
+                            <a href="https://www.google.com/maps/place/${profile.location}">
+                                ${profile.location}
+                            </a>
+                            <a href="${profile.userProfile}">GitHub Profile</a>
+                            <a href="${profile.blog}">Blog</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+    </header>
+    <div class="row">
+        <div class="col">
+            <p>${profile.bio}</p>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body " id="public-repos">
+                    <h5>Repos</h5>
+                    <p>${profile.publicRepos}Numbers</p>
                 </div>
             </div>
         </div>
-        <div class="row">
-            <div class="col">
-                Bio will go here. 
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="card">
-                    <div class="card-body dark" id="public-repos">Repos</div>
-                    <div class="card-body dark" id="repo-number">Numbers</div>
-                </div>
-            </div>
-            <div class="col-lg-6">
-                <div class="card">
-                    <div class="card-body dark" id="followers">Followers</div>
-                    <div class="card-body dark" id="number">Number</div>
+        <div class="col-lg-6">
+            <div class="card">
+                <div class="card-body " id="followers">
+                    <h5>Followers</h5>
+                    <p>${profile.followers}Number</p>
                 </div>
             </div>
         </div>
-       
+
         <div class="row">
             <div class="col-lg-6">
                 <div class="card">
-                    <div class="card-body dark" id="gh-stars">GitHub Stars</div>
-                    <div class="card-body dark" id="gh-number">Numbers</div>
+                    <div class="card-body " id="gh-stars">
+                        <h5>GitHub</h5>
+                        <p>${ghStars.length}StarsNumbers</p>
+                    </div>
                 </div>
             </div>
             <div class="col-lg-6">
                 <div class="card">
-                    <div class="card-body dark" id="following">Following</div>
-                    <div class="card-body dark" id="following-number">Number</div>
+                    <div class="card-body " id="following">
+                        <h5>Following</h5>
+                        <p>${profile.following}Number</p>
+                    </div>
                 </div>
             </div>
         </div>

@@ -97,8 +97,8 @@ function makeHTML(ghRes, userInput, ghstarsqueryURL) {
                                 <a href="https://www.google.com/maps/place/${ghRes.data.location}">
                                     ${ghRes.data.location}
                                 </a>
-                                <a href="${ghRes.data.userProfile}">GitHub Profile</a>
-                                <a href="${ghRes.data.blog}">Blog</a>
+                                <a href="${ghRes.data.userProfile}">Gabby's GitHub </a>
+                                <a href="${ghRes.data.blog}"></a>
                             </p>
                         </div>
                     </div>
@@ -114,7 +114,7 @@ function makeHTML(ghRes, userInput, ghstarsqueryURL) {
                 <div class="card">
                     <div class="card-body " id="public-repos">
                         <h5>Repos</h5>
-                        <p>${ghRes.data.public_repos}Numbers</p>
+                        <p>${ghRes.data.public_repos}</p>
                     </div>
                 </div>
             </div>
@@ -122,7 +122,7 @@ function makeHTML(ghRes, userInput, ghstarsqueryURL) {
                 <div class="card">
                     <div class="card-body " id="followers">
                         <h5>Followers</h5>
-                        <p>${ghRes.data.followers}Number</p>
+                        <p>${ghRes.data.followers}</p>
                     </div>
                 </div>
             </div>
@@ -132,7 +132,7 @@ function makeHTML(ghRes, userInput, ghstarsqueryURL) {
                     <div class="card">
                         <div class="card-body " id="gh-stars">
                             <h5>GitHub</h5>
-                            <p>${ghstarsqueryURL.data.length}StarsNumbers</p>
+                            <p>${ghstarsqueryURL.data.length}</p>
                         </div>
                     </div>
                 </div>
@@ -140,7 +140,7 @@ function makeHTML(ghRes, userInput, ghstarsqueryURL) {
                     <div class="card">
                         <div class="card-body " id="following">
                             <h5>Following</h5>
-                            <p>${ghRes.data.following}Number</p>
+                            <p>${ghRes.data.following}</p>
                         </div>
                     </div>
                 </div>
